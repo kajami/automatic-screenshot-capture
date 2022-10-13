@@ -19,9 +19,11 @@ while(i<screenshots):
 
     # grab a spesific part of the screen
     # X1,Y1,X2,Y2
-    im = ImageGrab.grab(bbox=(0, 450, 1585, 1050))
-
-    image_name = f"screenshot-{str(datetime.now())}"
+    im = ImageGrab.grab(bbox=(0, 450, 1585, 1035))
+    
+    # have to format datetime because Windows users wont be able to save images with ":"- symbol in file name
+    date_time = datetime.now().strftime("%Y-%m-%d_%H.%M.%S")
+    image_name = f"image-{date_time}"
 
     # save image file
     filepathloc = f"./screenshots/{image_name}.png"

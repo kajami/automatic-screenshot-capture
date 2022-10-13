@@ -12,4 +12,4 @@ How to install & use program
 
 6. Images are saved in the ./screenshots folder
 
-7. If you want to change the position of the screenshots you have to change the bbox coordinates (bbox=(0, 450, 1585, 1050)). If you want the fullscreen screenshots use ImageGrab.grab() instead of bbox.
+7. If you want to change the position of the screenshots you have to change the bbox coordinates (bbox=(0, 450, 1585, 1035)). If you want the fullscreen screenshots use ImageGrab.grab() instead of bbox.
